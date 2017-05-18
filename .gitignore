@@ -1,7 +1,8 @@
 
-/src/main/resources/conf/SecureConfig.xml
 /logs/
 /build/
 /.idea/
 /gradle/
 /.gradle/
+/conf/
+/src/main/resources/conf/SecureConfig.xml

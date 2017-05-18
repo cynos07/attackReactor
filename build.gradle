@@ -1,9 +1,22 @@
 group 'kr.studygram'
-version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-
+version = '1.0'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'attackReactor',
+                'Implementation-Version': version,
+                'Main-Class': 'kr.studygram.attackReactor.core.AttackReactorMain'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+    from { (configurations.runtime).collect { it.isDirectory() ? it : zipTree(it) } }
+}
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()

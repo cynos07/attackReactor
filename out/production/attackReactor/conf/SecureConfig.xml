@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<configuration>
+    <administrator>
+        <id>admin</id>
+        <password>adminuser</password>
+    </administrator>
+    <router>
+        <name>A1004NS</name>
+        <version>9-98-4</version>
+    </router>
+
+    <A1004NS9-98-4>
+        <login_page>
+            <username>/html/body/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/input</username>
+            <password>//*[@id="passwd_td"]/input</password>
+            <submit_button>//*[@id="submit_bt"]</submit_button>
+        </login_page>
+        <main_page>
+            <setting_button>/html/body/map/area[1]</setting_button>
+        </main_page>
+        <setting_page>
+            <main>/html/body/table/tbody/tr/td[2]/table/tbody/tr[2]/td/iframe</main>
+            <main_body>/html/frameset/frameset/frame[2]</main_body>
+            <navi_menu_basic>/html/body/table/tbody/tr/td[1]/table/tbody/tr[2]/td/iframe</navi_menu_basic>
+            <macAddressCheckBox>//*[@id="macchk_dynamic"]</macAddressCheckBox>
+            <macAddress1>//*[@id="dynamic"]/td/table/tbody/tr[6]/td[2]/input[1]</macAddress1>
+            <macAddress2>//*[@id="dynamic"]/td/table/tbody/tr[6]/td[2]/input[2]</macAddress2>
+            <macAddress3>//*[@id="dynamic"]/td/table/tbody/tr[6]/td[2]/input[3]</macAddress3>
+            <macAddress4>//*[@id="dynamic"]/td/table/tbody/tr[6]/td[2]/input[4]</macAddress4>
+            <macAddress5>//*[@id="dynamic"]/td/table/tbody/tr[6]/td[2]/input[5]</macAddress5>
+            <macAddress6>//*[@id="dynamic"]/td/table/tbody/tr[6]/td[2]/input[6]</macAddress6>
+            <settingInternetConnection>//*[@id="netconf_wansetup_2_td"]/span/a</settingInternetConnection>
+        </setting_page>
+    </A1004NS9-98-4>
+
+    <A1004NS9-91-2>
+        <login_page>
+            <username>/html/body/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td[2]/input</username>
+            <password>//*[@id="passwd_td"]/input</password>
+            <submit_button>//*[@id="submit_bt"]</submit_button>
+        </login_page>
+        <main_page>
+            <setting_button>/html/body/map/area[1]</setting_button>
+        </main_page>
+        <setting_page>
+            <main>/html/body/table/tbody/tr/td[2]/table/tbody/tr[2]/td/iframe</main>
+            <main_body>/html/frameset/frameset/frame[2]</main_body>
+            <navi_menu_basic>/html/body/table/tbody/tr/td[1]/table/tbody/tr[2]/td/iframe</navi_menu_basic>
+            <macAddress>//*[@id="dynamic"]/td/table/tbody/tr[1]/td[2]/input[6]</macAddress>
+            <settingInternetConnection>//*[@id="netconf_wansetup_2_td"]/span/a</settingInternetConnection>
+        </setting_page>
+    </A1004NS9-91-2>
+</configuration>

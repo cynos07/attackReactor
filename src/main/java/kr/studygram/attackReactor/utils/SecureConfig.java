@@ -12,11 +12,12 @@ import java.io.File;
 /**
  * Created by production on 2017-04-06.
  */
+
 public enum SecureConfig {
     INSTANCE;
     private Configuration config;
     private String CONFIG_FILENAME = "SecureConfig.xml";
-    private String CONFIG_PATH = SecureConfig.class.getClassLoader().getResource("conf").getPath()+"/" + CONFIG_FILENAME;
+    private String CONFIG_PATH = "./conf/" + CONFIG_FILENAME;
 
     SecureConfig() {
         Parameters params = new Parameters();
